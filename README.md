@@ -8,7 +8,5 @@
 4. Variables tab -> add BOT_TOKEN
 5. Deploy
 
-## If Railpack error appears
-
-railway.toml forces NIXPACKS builder.
-If still failing: Settings -> Builder -> Nixpacks -> Redeploy.
+If Railpack error appears:
+Settings -> Builder -> Nixpacks -> Redeploy

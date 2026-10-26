@@ -1,14 +1,9 @@
-# Force Nixpacks to build python env properly
-# Key fix: use python -m pip instead of bare pip
+# DO NOT define [phases.install] manually.
+# Railway auto-creates venv and runs pip install -r requirements.txt
+# Defining install phase manually breaks pip (No module named pip).
 
 [phases.setup]
-nixPkgs = ["python311", "python311Packages.pip"]
-
-[phases.install]
-cmds = [
-  "python -m pip install --upgrade pip setuptools wheel",
-  "python -m pip install -r requirements.txt"
-]
+nixPkgs = ["python311"]
 
 [start]
 cmd = "python game.py"

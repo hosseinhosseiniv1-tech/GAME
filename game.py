@@ -19,6 +19,9 @@ BOT_TOKEN = "8862201484:AAEkzV5B-7weZBTf_CneWfoQAKY2NC9zRRE"
 import os as _os_railway
 if _os_railway.environ.get('BOT_TOKEN'):
     BOT_TOKEN = _os_railway.environ.get('BOT_TOKEN')
+import os as _os_railway
+if _os_railway.environ.get('BOT_TOKEN'):
+    BOT_TOKEN = _os_railway.environ.get('BOT_TOKEN')
 
 import os as _os_railway
 if _os_railway.environ.get('BOT_TOKEN'):
